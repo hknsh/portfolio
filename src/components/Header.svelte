@@ -5,7 +5,7 @@
         <a href="#" class="link">Home</a>
         <a href="#projects" class="link">Projects</a>
         <a href="#hobbies" class="link">Hobbies</a>
-        <a href="https://card.hksh.icu" class="link">Social</a>
+        <a href="https://social.hksh.icu" class="link">Social</a>
       </div>
     </div>
   </header>
