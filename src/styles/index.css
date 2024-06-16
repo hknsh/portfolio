@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply underline decoration-indigo-500 decoration-2 underline-offset-8 hover:decoration-indigo-600 hover:text-neutral-50 delay-100 transition ease-in-out;
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+}
