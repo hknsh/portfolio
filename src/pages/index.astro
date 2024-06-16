@@ -2,11 +2,23 @@
 import Layout from '../layouts/Layout.astro'
 import Header from '../components/Header.svelte'
 import Home from '../components/Home.svelte'
+import Projects from '../components/Projects.svelte'
+import Border from '../components/Border.svelte'
+import Footer from '../components/Footer.svelte'
+
+// TODO: Fix footer responsiveness
+// TODO: Create a card for the projects
+// TODO: Add Hobbies section
+// TODO: Fix Projects section position.
 ---
 
 <Layout title=".::..hksh..::.">
-  <Header client:load />
+  <Header />
   <main>
-    <Home client:load />
+    <Home />
+    <Border />
+    <Projects />
+    <Border />
+    <Footer />
   </main>
 </Layout>

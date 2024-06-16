@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer components {
   .link {
     @apply underline decoration-indigo-500 decoration-2 underline-offset-8 transition delay-100 ease-in-out hover:text-neutral-50 hover:decoration-indigo-600;
