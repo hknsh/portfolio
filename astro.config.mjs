@@ -1,8 +1,8 @@
-import { defineConfig } from 'astro/config';
-import cloudflare from '@astrojs/cloudflare';
-import tailwind from '@astrojs/tailwind';
+import { defineConfig } from 'astro/config'
+import cloudflare from '@astrojs/cloudflare'
+import tailwind from '@astrojs/tailwind'
 
-import svelte from "@astrojs/svelte";
+import svelte from '@astrojs/svelte'
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,7 +12,10 @@ export default defineConfig({
       enabled: true
     }
   }),
-  integrations: [tailwind({
-    applyBaseStyles: false
-  }), svelte()]
-});
+  integrations: [
+    tailwind({
+      applyBaseStyles: false
+    }),
+    svelte()
+  ]
+})

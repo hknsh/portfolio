@@ -4,9 +4,9 @@
 
 @layer components {
   .link {
-    @apply underline decoration-indigo-500 decoration-2 underline-offset-8 hover:decoration-indigo-600 hover:text-neutral-50 delay-100 transition ease-in-out;
+    @apply underline decoration-indigo-500 decoration-2 underline-offset-8 transition delay-100 ease-in-out hover:text-neutral-50 hover:decoration-indigo-600;
   }
   .flex-center {
-    @apply flex justify-center items-center;
+    @apply flex items-center justify-center;
   }
 }
