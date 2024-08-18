@@ -12,33 +12,68 @@
   import Linux from '../svg/tech/linux.svelte'
   import Prisma from '../svg/tech/prisma.svelte'
   import Swagger from '../svg/tech/swagger.svelte'
-  import Vim from '../svg/tech/vim.svelte'
 </script>
 
 <div class="flex flex-col space-y-6">
-  <div class="mr-4 space-y-6 rounded-2xl p-2 md:p-4">
-    <div class="flex-center flex-row">
-      <Vim />
+  <div class="mr-4 space-y-6 p-2 md:p-4">
+    <div id="languages" class="pyramid-rows">
+      <div class="tech-box">
+        <Js />
+        <span class="link">Javascript</span>
+      </div>
+      <div class="tech-box">
+        <Ts />
+        <span class="link">Typescript</span>
+      </div>
+      <div class="tech-box">
+        <Rust />
+        <span class="link">Rust</span>
+      </div>
     </div>
-    <div id="languages" class="flex-center flex-row space-x-6">
-      <Js />
-      <Ts />
-      <Rust />
-    </div>
-    <div id="frameworks" class="flex-center flex-row space-x-6">
-      <Express />
-      <Nest />
-      <Astro />
-      <Fastify />
+    <div id="frameworks" class="pyramid-rows">
+      <div class="tech-box">
+        <Express />
+        <span class="link">ExpressJS</span>
+      </div>
+      <div class="tech-box">
+        <Nest />
+        <span class="link">NestJS</span>
+      </div>
+      <div class="tech-box">
+        <Astro />
+        <span class="link">Astro</span>
+      </div>
+      <div class="tech-box">
+        <Fastify />
+        <span class="link">Fastify</span>
+      </div>
     </div>
 
-    <div id="techs" class="flex-center flex-row space-x-6">
-      <Docker />
-      <Swagger />
-      <Git />
-      <Jest />
-      <Linux />
-      <Prisma />
+    <div id="techs" class="pyramid-rows">
+      <div class="tech-box">
+        <Docker />
+        <span class="link">Docker</span>
+      </div>
+      <div class="tech-box">
+        <Swagger />
+        <span class="link">Swagger</span>
+      </div>
+      <div class="tech-box">
+        <Git />
+        <span class="link">Git</span>
+      </div>
+      <div class="tech-box">
+        <Jest />
+        <span class="link">Jest</span>
+      </div>
+      <div class="tech-box">
+        <Linux />
+        <span class="link">Linux</span>
+      </div>
+      <div class="tech-box">
+        <Prisma />
+        <span class="link">Prisma</span>
+      </div>
     </div>
   </div>
 </div>

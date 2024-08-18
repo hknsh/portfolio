@@ -22,4 +22,10 @@ html {
   .neutral-btn-lg {
     @apply flex-center w-48 rounded-xl bg-neutral-800 p-3 text-base transition ease-in hover:bg-neutral-900 md:p-4 md:text-base;
   }
+  .tech-box {
+    @apply flex flex-col items-center space-y-3;
+  }
+  .pyramid-rows {
+    @apply flex-center flex-row space-x-8 space-y-2;
+  }
 }
