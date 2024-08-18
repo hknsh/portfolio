@@ -26,14 +26,6 @@ export const ui = {
     knedita: 'An open-source social media. Created with NestJS',
     bank: 'A simple interface for a fictional bank. Made with React Native and Expo',
     biome: 'Contributed to the Portuguese translation of the documentation',
-    hobbies: 'Hobbies',
-    'hobbies.description': 'I have a few hobbies too, you can take a look down below',
-    gaming: 'Gaming',
-    'gaming.description': 'I really love gaming, especially indie/rhythm games! Osu! and Quaver are some one of my favorite games',
-    languages: 'Languages',
-    'languages.description': "I love learning new languages. The first language I studied was English and since then I've been learning other languages such as German, Gaeilge and Japanese",
-    anime: 'Anime/Manga',
-    'anime.description': 'I grew up watching animes and reading mangas! I could spent a day listing my favorites mangas, like: Ranma 1/2, Erased, One Piece, Tower of God, The God Of Highschool and many others...'
   },
   pt: {
     'header.home': 'Inicio',
