@@ -1,0 +1,13 @@
+---
+const { link } = Astro.props
+import Github from '../svg/tech/github.svelte'
+---
+
+<div class="neutral-btn-lg">
+  <a class="flex-center" href={link}>
+    <div class="pr-1 md:pr-2">
+      <Github />
+    </div>
+    GitHub
+  </a>
+</div>

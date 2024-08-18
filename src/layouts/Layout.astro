@@ -1,15 +1,18 @@
 ---
+import '../styles/index.css'
+import { getLangFromUrl } from '../i18n/utils'
+
 interface Props {
   title: string
 }
 
-import '../styles/index.css'
-
 const { title } = Astro.props
+
+const lang = getLangFromUrl(Astro.url)
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Hello! This is my portfolio!" />

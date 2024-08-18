@@ -1,0 +1,46 @@
+---
+import Github from '../svg/tech/github.svelte'
+import Technologies from './Technologies.svelte'
+import I18n from './i18n.astro'
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<div class="md:flex-center flex-col pt-24">
+  <div id="#" class="flex flex-col items-start justify-center p-4 font-semibold">
+    <div class="space-y-8">
+      <h1 class="text-3xl md:text-5xl">{t('hello')}</h1>
+
+      <p>
+        {t('introduction')}
+      </p>
+
+      <I18n />
+
+      <p class="break-words">{t('description')}</p>
+
+      <div>
+        <div class="pb-4">
+          <p class="text-xl">{t('technologies')}</p>
+        </div>
+        <Technologies />
+        <div class="flex-center pt-8">
+          <p class="text-neutral-400">{t('technologies.footer')}</p>
+        </div>
+      </div>
+
+      <div class="flex-center pt-4 md:pt-8">
+        <div class="neutral-btn">
+          <a class="flex-center" href="https://github.com/hknsh/portfolio/">
+            <div class="pr-2">
+              <Github />
+            </div>
+            {t('github')}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

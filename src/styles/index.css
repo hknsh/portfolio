@@ -13,4 +13,13 @@ html {
   .flex-center {
     @apply flex items-center justify-center;
   }
+  .neutral-btn {
+    @apply flex-center max-w-sm rounded-xl bg-neutral-800 p-3 text-sm transition ease-in hover:bg-neutral-900 md:p-4 md:text-base;
+  }
+  .box {
+    @apply flex-center flex h-[400px] w-[400px] flex-col space-y-8 rounded-xl border border-neutral-500 p-6;
+  }
+  .neutral-btn-lg {
+    @apply flex-center w-48 rounded-xl bg-neutral-800 p-3 text-base transition ease-in hover:bg-neutral-900 md:p-4 md:text-base;
+  }
 }

@@ -16,8 +16,7 @@
 </script>
 
 <div class="flex flex-col space-y-6">
-  <p class="text-xl">Technologies that I know how to use:</p>
-  <div class="mr-2 space-y-6 rounded-2xl border border-neutral-700 p-2 md:p-4">
+  <div class="mr-4 space-y-6 rounded-2xl p-2 md:p-4">
     <div class="flex-center flex-row">
       <Vim />
     </div>
@@ -40,9 +39,6 @@
       <Jest />
       <Linux />
       <Prisma />
-    </div>
-    <div class="flex-center">
-      <p class="text-neutral-400">And many more...</p>
     </div>
   </div>
 </div>

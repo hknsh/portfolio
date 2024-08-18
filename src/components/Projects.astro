@@ -1,0 +1,41 @@
+---
+import GithubButton from './GithubButton.astro'
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<div class="md:flex-center mt-24 flex-col" id="projects">
+  <div class="flex flex-col items-start justify-center p-4">
+    <div class="space-y-8">
+      <h1 class="text-3xl md:text-5xl">{t('projects')}</h1>
+
+      <p>{t('projects.description')}</p>
+
+      <div class="space-y-12 md:m-4 md:flex md:flex-row md:justify-start md:space-x-20 md:p-4">
+        <div class="box">
+          <h2 class="text-lg md:text-xl">Project Knedita</h2>
+          <p class="text-base font-medium">{t('knedita')}</p>
+          <GithubButton link="https://github.com/hknsh/project-knedita" />
+        </div>
+
+        <div class="box">
+          <h2 class="text-lg md:text-2xl">SeuBanco</h2>
+          <p class="text-base font-medium">
+            {t('bank')}
+          </p>
+          <GithubButton link="https://github.com/hknsh/SeuBanco" />
+        </div>
+
+        <div class="box">
+          <h2 class="text-lg md:text-2xl">BiomeJS</h2>
+          <p class="text-base font-medium">
+            {t('biome')}
+          </p>
+          <GithubButton link="https://github.com/biomejs/biome" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
